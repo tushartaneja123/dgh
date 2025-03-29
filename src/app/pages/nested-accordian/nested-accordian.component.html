@@ -1,0 +1,58 @@
+<div class="">
+    <mat-accordion multi="true">
+
+        <!-- Outer Expansion Panel -->
+        <mat-expansion-panel [ngClass]="getPanelClass(-1)" showToggle="true">
+            <mat-expansion-panel-header>
+                Outer Expansion Panel
+            </mat-expansion-panel-header>
+
+            <ng-template matExpansionPanelContent>
+                <mat-accordion class="example-headers-align" multi="true">
+                    @for (middleItem of middleItems; track middleItem; let mp = $index) {
+
+                    <!-- Middle Expansion Panel -->
+                    <mat-expansion-panel [ngClass]="getPanelClass(mp)" (opened)="setMiddleStep(mp)" showToggle="true">
+
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Middle Panel {{ middleItem }}
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+
+                        <ng-template matExpansionPanelContent>
+                            <mat-accordion class="example-headers-align" multi="true">
+                                @for (innerItem of innerItems; track innerItem; let ip = $index) {
+
+                                <!-- Inner Expansion Panel -->
+                                <mat-expansion-panel [ngClass]="getPanelClass(ip, mp)" (opened)="setInnerStep(ip)" showToggle="true">
+
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            Inner Panel {{ innerItem }}
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+
+                                    <ng-template matExpansionPanelContent>
+                                       <div class="mt-3">
+                                        <mat-form-field appearance="outline">
+                                            <mat-label>First Name</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                       </div>
+                                    </ng-template>
+
+                                </mat-expansion-panel>
+
+                                }
+                            </mat-accordion>
+                        </ng-template>
+                    </mat-expansion-panel>
+
+                    }
+                </mat-accordion>
+            </ng-template>
+        </mat-expansion-panel>
+
+    </mat-accordion>
+</div>
