@@ -36,7 +36,7 @@ body {
   --primary: #0029a3;
   --secondary: #1cb9ce;
   --warn: #cc3300;
-  --mat-expansion-container-shape:0
+  --mat-expansion-container-shape:0;
 }
 
 //------------------------
@@ -151,11 +151,6 @@ body {
 // --------------------------------------
 // -----------Form-Field Style-----------
 // --------------------------------------
-.mat-mdc-form-field{
-  .mat-mdc-form-field-subscript-wrapper{
-    display: none !important;
-}
-}
 
 
 // --------------------------------------

@@ -6,3 +6,20 @@
     }
    
 }
+
+.mat-mdc-form-field{
+    --mdc-outlined-text-field-container-shape: 6px;
+    --mdc-outlined-text-field-outline-color: #E4E4E7;
+    --mdc-outlined-text-field-outline-width: 2px;
+    --mdc-outlined-text-field-hover-outline-color: #E4E4E7;
+    .mat-mdc-form-field-subscript-wrapper{
+      display: none !important;
+  }
+    .mat-mdc-select-value-text {
+      color: #101012;
+    }
+  
+    .mat-mdc-floating-label {
+      color: #1A1A1A !important;
+    }
+  }
