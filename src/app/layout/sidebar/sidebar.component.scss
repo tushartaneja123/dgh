@@ -1,6 +1,33 @@
-.mat-mdc-card{
-    background-color: transparent !important;
-}               
-.header-container{
-   background:  linear-gradient(90deg, #599afd 0%, #1b54b1 100%);
+.sidebar-container {
+    .sidebar {
+        width: 240px;
+        border-right: 2px solid #EFEFF0;
+        color: #3F3F46;
+        min-height: calc(100vh - 60px);
+        height: 100%;
+        .menu-details {
+            background-color: #FFF;
+            border-bottom: 1px solid #F4F4F5;
+            border-right: 2px solid #ffffff;
+            &:first-child {
+                border-top: 1px solid #F4F4F5;
+            }
+            &.active-menu {
+                background-color: #DDDBFE;
+                color: var(--primary);
+                border-right: 3px solid var(--primary);
+            }
+            &:not(.active-menu):hover {
+                background-color: #0000000a;
+                border-right: 3px solid #333;
+            }
+        }
+        .logout-details {
+            border-top: 1px solid #F4F4F5;
+            &:hover {
+                background-color: #0000000a;
+                border-right: 3px solid #333;
+            }
+        }
+    }
 }

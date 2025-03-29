@@ -1,10 +1,12 @@
-<div class="container-fluid mb-5">
-    <div class="row mt-5">
-        <div class="col-2">
+<div class="common-comps-container mb-5">
+    <div class="row me-0">
+        <div class="col-3 col-xxl-2">
           <app-sidebar></app-sidebar>
         </div>
-        <div class="col-10">
-          <router-outlet></router-outlet>
+        <div class="col-9 col-xxl-10 mt-4">
+          <div class="container-fluid">
+            <router-outlet></router-outlet>
+          </div>
         </div>
     </div>
 </div>

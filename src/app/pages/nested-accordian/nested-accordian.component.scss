@@ -1,6 +1,7 @@
 ::ng-deep mat-accordion {
   .mat-expansion-panel {
     background: none !important;
+    --mat-expansion-container-shape:0;
     --mat-expansion-header-expanded-state-height: 48px;
     .mat-expansion-panel-header {
       transition: height 0.2s ease-in-out;
@@ -12,11 +13,7 @@
     &:not([class*=mat-elevation-z]) {
       box-shadow: none !important;
     }
-    // &:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
-    //   background-color: #fff!important;
-    // }
     &.outer-panel {
-      // background: transparent !important;
       .mat-expansion-panel-header {
         border-left: 3px solid #564cfa;
         background-color: #554cfa36!important;

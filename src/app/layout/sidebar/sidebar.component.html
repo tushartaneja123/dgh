@@ -1,13 +1,18 @@
-<mat-card class="rounded-2 p-3">
-    <div class="header-container p-2 rounded-3 text-center text-white">
-        <p class="fw-semibold m-0">Components</p>
+<div class="sidebar-container">
+    <div class="sidebar bg-white d-flex flex-column justify-content-between h-100">
+       <div class="menu-list-container pt-4">
+          @for (item of menuList; track $index;let i = $index) {
+           <div [routerLink]="item.routerPath" [ngClass]="{'active-menu': activeMenu == i}" class="menu-details d-flex align-items-center gap-4 p-4 cursor-pointer" (click)="selectMenu(i)">
+                <img [src]="item.imgPath" [alt]="item.alt">
+                <p class="m-0 fw-semibold f-16">{{item.title}}</p>
+           </div>
+        }
     </div>
-     <div class="links-container p-2 d-flex flex-column gap-2 mt-2">
-        <p class="fw-semibold primary cursor-pointer" [routerLink]="['/nestedPanel']">Nested Panel</p>
-        <p class="fw-semibold primary cursor-pointer" [routerLink]="['/checkbox']">Checkbox</p>
-        <p class="fw-semibold primary cursor-pointer" [routerLink]="['/sidenav']">Sidenav</p>
-        <p class="fw-semibold primary cursor-pointer" [routerLink]="['/stepper']">Stepper</p>
-        <p class="fw-semibold primary cursor-pointer" [routerLink]="['/dropdown']">Dropdown</p>
-        <p class="fw-semibold primary cursor-pointer" [routerLink]="['/formField']">Form Field</p>
-     </div>
-</mat-card>
+        <div class="logout-container">
+             <div class="logout-details d-flex align-items-center gap-4 p-4 cursor-pointer">
+                <img src="/Components/sidebar/logout.svg" alt="logout">
+                <p class="m-0 fw-semibold f-16">Logout</p>
+             </div>
+        </div>
+    </div>
+</div>
