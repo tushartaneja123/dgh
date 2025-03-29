@@ -1,8 +1,10 @@
-<mat-form-field>
-    <mat-label>Favorite food</mat-label>
-    <mat-select [(ngModel)]="selectedValue" name="food">
-      @for (food of foods; track food) {
-        <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
-      }
-    </mat-select>
+<mat-form-field appearance="outline">
+  <mat-label>Select Country</mat-label>
+  <mat-select >
+    <mat-option value="0">India</mat-option>
+    <mat-option value="1">Australia</mat-option>
+    <mat-option value="2">Japan</mat-option>
+    <mat-option value="3">Canada</mat-option>
+    <mat-option value="04">China</mat-option>
+  </mat-select>
 </mat-form-field>

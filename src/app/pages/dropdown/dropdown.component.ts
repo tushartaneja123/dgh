@@ -10,12 +10,4 @@ import { MaterialModule } from '../../shared/material.module';
 })
 export class DropdownComponent {
  
-  selectedValue: any;
-
-  foods: any = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'},
-  ];
-
 }
