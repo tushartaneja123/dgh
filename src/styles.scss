@@ -5,7 +5,10 @@ body {
 }
 
 
-// Inter font
+//------------------
+//-----Font Face----
+//-------------------
+
 // @font-face {
 //   font-family: 'Inter-r';
 //   src: url(../src/assets/Fonts/Inter-Regular.ttf);
@@ -26,9 +29,9 @@ body {
 //   src: url(../src/assets/Fonts/Inter-Bold.ttf);
 // }
 
-/* -----------------------
-  ---color variables---
-  ----------------------- */
+//-----------------------
+//---Html Root----------
+//-----------------------
 :root {
   --primary: #0029a3;
   --secondary: #1cb9ce;
@@ -36,9 +39,9 @@ body {
   --mat-expansion-container-shape:0
 }
 
-/* -----------------------
-  ---color style class---
-  ----------------------- */
+//------------------------
+// ---color style---------
+//------------------------
 .primary {
   color: var(--primary);
 }
@@ -52,9 +55,9 @@ body {
 }
 
 
-/* -----------------------
-  ---Fonts Style Class---
-  ----------------------- */
+//-----------------------
+//---Fonts Style--------
+//----------------------
 
 .f-10 {
   font-size: 1rem;
@@ -92,7 +95,6 @@ body {
   font-size: 2.8rem;
 }
 
-
 // .medium-font {
 //   font-family: 'Inter-m' !important;
 // }
@@ -104,6 +106,7 @@ body {
 // .bold-font {
 //   font-family: 'Inter-b' !important;
 // }
+
 
 // ----------------------------------
 // -----------Button Style-----------
@@ -117,9 +120,10 @@ body {
 //   color: #fff;
 // }
 
-.cursor-pointer{
-  cursor: pointer;
-}
+
+// -----------------------------------
+// -----------Checkbox Style-----------
+// -----------------------------------
 .mat-mdc-checkbox {
   .mdc-checkbox__native-control:focus+.mdc-checkbox__ripple , .mdc-checkbox:hover>.mdc-checkbox__ripple {
     background-color: transparent !important;
@@ -143,3 +147,20 @@ body {
   }
 }
 
+
+// --------------------------------------
+// -----------Form-Field Style-----------
+// --------------------------------------
+.mat-mdc-form-field{
+  .mat-mdc-form-field-subscript-wrapper{
+    display: none !important;
+}
+}
+
+
+// --------------------------------------
+// -----------Additional Style-----------
+// --------------------------------------
+.cursor-pointer{
+  cursor: pointer;
+}
