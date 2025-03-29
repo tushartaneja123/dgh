@@ -1,10 +1,53 @@
-<mat-form-field appearance="outline">
-  <mat-label>Select Country</mat-label>
-  <mat-select >
-    <mat-option value="0">India</mat-option>
-    <mat-option value="1">Australia</mat-option>
-    <mat-option value="2">Japan</mat-option>
-    <mat-option value="3">Canada</mat-option>
-    <mat-option value="04">China</mat-option>
-  </mat-select>
-</mat-form-field>
+<div class="col-sm-6 col-lg-4">
+  <mat-card class="p-3">
+    <p class="fw-semibold">Single Select</p>
+    <mat-form-field appearance="outline">
+      <mat-label>Select Country</mat-label>
+      <mat-select>
+        <mat-option value="0">India</mat-option>
+        <mat-option value="1">Australia</mat-option>
+        <mat-option value="2">Japan</mat-option>
+        <mat-option value="3">Canada</mat-option>
+        <mat-option value="04">China</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card>
+</div>
+
+<div class="col-sm-6 col-lg-4 my-3">
+  <mat-card class="p-3">
+    <p class="fw-semibold">Multi Select</p>
+    <mat-form-field appearance="outline">
+      <mat-label>Select Country</mat-label>
+      <mat-select multiple>
+        <mat-option value="0">India</mat-option>
+        <mat-option value="1">Australia</mat-option>
+        <mat-option value="2">Japan</mat-option>
+        <mat-option value="3">Canada</mat-option>
+        <mat-option value="04">China</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card>
+</div>
+
+<div class="col-sm-6 col-lg-4">
+  <mat-card class="p-3">
+    <p class="fw-semibold">Autocomplete</p>
+    <mat-form-field appearance="outline">
+      <mat-label>Number</mat-label>
+      <input #input
+             type="text"
+             placeholder="Pick one"
+             matInput
+             [formControl]="myControl"
+             [matAutocomplete]="auto"
+             (input)="filter()"
+             (focus)="filter()">
+      <mat-autocomplete requireSelection #auto="matAutocomplete">
+        @for (option of filteredOptions; track option) {
+          <mat-option [value]="option">{{option}}</mat-option>
+        }
+      </mat-autocomplete>
+    </mat-form-field>
+  </mat-card>
+</div>

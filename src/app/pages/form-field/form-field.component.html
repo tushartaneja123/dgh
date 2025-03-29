@@ -1,5 +1,20 @@
-<mat-form-field appearance="outline">                                           
-    <input matInput [matDatepicker]="manufactDatePicker" placeholder="MM/DD/YYYY" (click)="manufactDatePicker.open()">                                          
-    <mat-datepicker-toggle matIconSuffix [for]="manufactDatePicker"></mat-datepicker-toggle>
-    <mat-datepicker #manufactDatePicker></mat-datepicker>
-</mat-form-field>
+<div class="col-sm-6 col-lg-4">
+    <mat-card class="p-3">
+        <p class="fw-semibold">Date Picker</p>
+        <mat-form-field appearance="outline">
+            <input matInput [matDatepicker]="manufactDatePicker" placeholder="MM/DD/YYYY"
+                (click)="manufactDatePicker.open()">
+            <mat-datepicker-toggle matIconSuffix [for]="manufactDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #manufactDatePicker></mat-datepicker>
+        </mat-form-field>
+    </mat-card>
+</div>
+
+<div class="col-sm-6 col-lg-4 mt-3">
+    <mat-card class="p-3">
+        <p class="fw-semibold">Input Field</p>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Type here">
+        </mat-form-field>
+    </mat-card>
+</div>

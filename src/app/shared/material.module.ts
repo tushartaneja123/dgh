@@ -29,7 +29,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatSidenavModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class MaterialModule {}

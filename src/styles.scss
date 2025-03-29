@@ -112,10 +112,10 @@ body {
 .btn-primary-border {
   --mdc-outlined-button-outline-color: var(--primary) !important;
 }
-.mat-mdc-option:hover:not(.mdc-list-item--disabled) {
-  background-color: var(--primary) !important;
-  color: #fff;
-}
+// .mat-mdc-option:hover:not(.mdc-list-item--disabled) {
+//   background-color: var(--primary) !important;
+//   color: #fff;
+// }
 
 .cursor-pointer{
   cursor: pointer;
