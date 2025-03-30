@@ -28,6 +28,25 @@ export class SidebarComponent implements OnInit {
      {title:'Tabs',imgPath:'/Components/sidebar/layers.svg',alt:'factsheet',routerPath:'/tabs'},
      {title:'Form Fields',imgPath:'/Components/sidebar/queries.svg',alt:'queries',routerPath:'/formField'},
      {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
+    //  {title:'Help & Support',imgPath:'/Components/sidebar/user-headset.svg',alt:'help-support'},
    ]
   }
 

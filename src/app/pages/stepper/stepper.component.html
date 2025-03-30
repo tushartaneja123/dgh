@@ -1,4 +1,9 @@
-<mat-stepper #stepper>
+<mat-card class="p-3">
+  <p class="fw-semibold fs-2 m-0">Stepper</p>
+</mat-card>
+
+<mat-card class="p-3 mt-4">
+  <mat-stepper #stepper>
     <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required.">
       <form [formGroup]="firstFormGroup">
         <ng-template matStepLabel>Fill out your name</ng-template>
@@ -17,8 +22,7 @@
         <ng-template matStepLabel>Fill out your address</ng-template>
         <mat-form-field>
           <mat-label>Address</mat-label>
-          <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="secondCtrl"
-                 required>
+          <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="secondCtrl" required>
         </mat-form-field>
         <div>
           <p>Go to a different step to see the error state</p>
@@ -36,4 +40,4 @@
       </div>
     </mat-step>
   </mat-stepper>
-  
+</mat-card>
