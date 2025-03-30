@@ -2,11 +2,15 @@
     margin-top: 60px;
     .mat-drawer-details-container {
         height: calc(100vh - 120px);
+        .mat-drawer-side {
+            border: none;
+        }
+        ::ng-deep .mat-drawer-inner-container {
+            overflow: auto;
+            background-color: #edf0f2;
+            width: auto;
+            overflow: auto;
+        }
     }
-    ::ng-deep .mat-drawer-inner-container {
-        overflow: auto !important;
-    }
-}
-.mat-drawer-inner-container{
-    background-color: #edf0f2;
+
 }

@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { MaterialModule } from './shared/material.module';
 import { CommonModule } from '@angular/common';
-import { CommonCompsComponent } from "./pages/common-comps/common-comps.component";
 import { HeaderComponent } from './layout/header/header.component';
 import { LayoutComponent } from "./layout/layout/layout.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [MaterialModule, CommonModule, CommonCompsComponent, HeaderComponent, LayoutComponent],
+  imports: [CommonModule, HeaderComponent, LayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
