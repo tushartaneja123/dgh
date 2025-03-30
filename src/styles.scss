@@ -4,7 +4,7 @@ html{
 
 body {
   margin: 0;
-  // font-family: 'Inter-r';
+  font-family: 'Nunito-r';
   font-size: 1.4rem;
 }
 
@@ -13,33 +13,29 @@ body {
 //-----Font Face----
 //-------------------
 
-// @font-face {
-//   font-family: 'Inter-r';
-//   src: url(../src/assets/Fonts/Inter-Regular.ttf);
-// }
+@font-face {
+  font-family: 'Nunito-r';
+  src: url(../assets/fonts/Nunito-Regular.ttf);
+}
 
-// @font-face {
-//   font-family: 'Inter-m';
-//   src: url(../src/assets/Fonts/Inter-Medium.ttf);
-// }
+@font-face {
+  font-family: 'Nunito-m';
+  src: url(../assets/fonts/Nunito-Medium.ttf);
+}
 
-// @font-face {
-//   font-family: 'Inter-sb';
-//   src: url(../src/assets/Fonts/Inter-SemiBold.ttf);
-// }
 
-// @font-face {
-//   font-family: 'Inter-b';
-//   src: url(../src/assets/Fonts/Inter-Bold.ttf);
-// }
+@font-face {
+  font-family: 'Nunito-b';
+  src: url(../assets/fonts/Nunito-Bold.ttf);
+}
 
 //-----------------------
 //---Html Root----------
 //-----------------------
 :root {
-  --primary: #0029a3;
-  --secondary: #1cb9ce;
-  --warn: #cc3300;
+  --primary: #564cfa;
+  --secondary: #564cfa;
+  --warn: #d3273e;
 }
 
 //-------------------------------
@@ -135,17 +131,13 @@ body {
   font-size: 2.8rem;
 }
 
-// .medium-font {
-//   font-family: 'Inter-m' !important;
-// }
+.medium-font {
+  font-family: 'Nunito-m' !important;
+}
 
-// .semibold-font {
-//   font-family: 'Inter-sb' !important;
-// }
-
-// .bold-font {
-//   font-family: 'Inter-b' !important;
-// }
+.bold-font {
+  font-family: 'Nunito-b' !important;
+}
 
 
 // --------------------------------------
@@ -153,4 +145,7 @@ body {
 // --------------------------------------
 .cursor-pointer{
   cursor: pointer;
+}
+.mat-mdc-card {
+  box-shadow: 0rem 0.308rem 2rem #74799326 !important;
 }
