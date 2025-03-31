@@ -1,5 +1,5 @@
 <mat-card class="p-4">
-    <p class="fw-semibold fs-2 m-0">Nested Panel</p>
+    <p class="fheading-2 m-0">Nested Panel</p>
 </mat-card>
 
 <mat-card class="p-4 mt-4">
@@ -17,7 +17,7 @@
                         @for (middleItem of middleItems; track middleItem; let mp = $index) {
 
                         <!-- Middle Expansion Panel -->
-                        <mat-expansion-panel expanded [ngClass]="getPanelClass(mp)" (opened)="setMiddleStep(mp)"
+                        <mat-expansion-panel  [ngClass]="getPanelClass(mp)" (opened)="setMiddleStep(mp)"
                             showToggle="true">
 
                             <mat-expansion-panel-header>
@@ -31,7 +31,7 @@
                                     @for (innerItem of innerItems; track innerItem; let ip = $index) {
 
                                     <!-- Inner Expansion Panel -->
-                                    <mat-expansion-panel expanded [ngClass]="getPanelClass(ip, mp)"
+                                    <mat-expansion-panel  [ngClass]="getPanelClass(ip, mp)"
                                         (opened)="setInnerStep(ip)" showToggle="true">
 
                                         <mat-expansion-panel-header>

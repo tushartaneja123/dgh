@@ -37,3 +37,15 @@
         }
     }
 }
+
+// Media Query
+@media screen and (max-width:1399px){
+    .sidebar-container {
+        .sidebar {
+            .menu-list-details-container{
+                max-height: 390px;
+                overflow: auto;
+            }
+    }  
+}
+}

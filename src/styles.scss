@@ -1,32 +1,47 @@
+//------------------------------
+//-----Html Root Element---------
+//------------------------------
 html{
-  font-size: 62.5%;
+  font-size: 62.5%;  // 62.5% of 16px = 10px 
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 1399px){
+  html{
+    font-size: 58%; // 58% of 16px = 9.28px
+  }
+}
+@media screen and (max-width: 991px){
+  html{
+    font-size: 56%; // 56% of 16px = 8.96px 
+  }
 }
 
+//------------------
+//-----Body---------
+//-------------------
 body {
   margin: 0;
   font-family: 'Nunito-r';
   font-size: 1.4rem;
 }
 
-
 //------------------
 //-----Font Face----
-//-------------------
-
+//------------------
 @font-face {
   font-family: 'Nunito-r';
-  src: url(../assets/fonts/Nunito-Regular.ttf);
+  src: url(../src/assets/fonts/Nunito-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Nunito-m';
-  src: url(../assets/fonts/Nunito-Medium.ttf);
+  src: url(../src/assets/fonts/Nunito-Medium.ttf);
 }
 
 
 @font-face {
   font-family: 'Nunito-b';
-  src: url(../assets/fonts/Nunito-Bold.ttf);
+  src: url(../src/assets/fonts/Nunito-Bold.ttf);
 }
 
 //-----------------------
@@ -39,7 +54,7 @@ body {
 }
 
 //-------------------------------
-//---Scrollbar Styling-----
+//---Scrollbar Styling----------
 //-------------------------------
 
 ::-webkit-scrollbar {
@@ -75,9 +90,9 @@ body {
   border-radius: 8px;
 }
 
-//------------------------
-// ---color style---------
-//------------------------
+//--------------------------
+// ---Color Styling---------
+//--------------------------
 .primary {
   color: var(--primary);
 }
@@ -91,9 +106,33 @@ body {
 }
 
 
-//-----------------------
-//---Fonts Style--------
-//----------------------
+//------------------------
+//---Fonts Styling--------
+//------------------------
+
+.heading-1,
+h1 {
+  font-size: 2.4rem !important;
+  font-weight: 700 !important;
+}
+
+.heading-2,
+h2 {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+}
+
+.subtitle-1,
+h3 {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+}
+
+.subtitle-2,
+h4 {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
 
 .f-10 {
   font-size: 1rem;
@@ -139,13 +178,16 @@ body {
   font-family: 'Nunito-b' !important;
 }
 
+// --------------------------------------
+// -----------Mat Card Styling-----------
+// --------------------------------------
+.mat-mdc-card {
+  box-shadow: 0rem 0.308rem 2rem #74799326 !important;
+}
 
 // --------------------------------------
-// -----------Additional Style-----------
+// -----------Additional Styling-----------
 // --------------------------------------
 .cursor-pointer{
   cursor: pointer;
-}
-.mat-mdc-card {
-  box-shadow: 0rem 0.308rem 2rem #74799326 !important;
 }
