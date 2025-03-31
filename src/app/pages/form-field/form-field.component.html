@@ -8,7 +8,7 @@
     <mat-card class="p-4 h-100">
       <p class="bold-font f-16 m-0">Single Select</p>
       <hr>
-      <span class="bold-font label-style">Label*</span>
+      <span class="bold-font label-style pb-1">Label*</span>
       <mat-form-field appearance="outline">
         <mat-select placeholder="Select">
           <mat-option value="0">India</mat-option>
@@ -26,7 +26,7 @@
     <mat-card class="p-4 h-100">
       <p class="bold-font f-16 m-0">Multi Select</p>
       <hr>
-      <span class="bold-font label-style">Label*</span>
+      <span class="bold-font label-style pb-1">Label*</span>
       <mat-form-field appearance="outline">
         <mat-select multiple placeholder="Select">
           <mat-option value="0">India</mat-option>
@@ -44,7 +44,7 @@
     <mat-card class="p-4 h-100">
       <p class="bold-font f-16 m-0">Autocomplete</p>
       <hr>
-      <span class="bold-font label-style">Label*</span>
+      <span class="bold-font label-style pb-1">Label*</span>
       <mat-form-field appearance="outline">
         <input #input type="text" placeholder="Pick one" matInput [formControl]="myControl" [matAutocomplete]="auto"
           (input)="filter()" (focus)="filter()">
@@ -61,7 +61,7 @@
     <mat-card class="p-4 h-100">
       <p class="bold-font f-16 m-0">Date Picker Outlined</p>
       <hr>
-      <span class="bold-font label-style">Label*</span>
+      <span class="bold-font label-style pb-1">Label*</span>
       <mat-form-field appearance="outline">
         <input matInput [matDatepicker]="outlineDatePicker" placeholder="MM/DD/YYYY" (click)="outlineDatePicker.open()">
         <mat-datepicker-toggle matIconSuffix [for]="outlineDatePicker">
@@ -76,7 +76,7 @@
     <mat-card class="p-4 h-100">
       <p class="bold-font f-16 m-0">Date Picker Filled</p>
       <hr>
-      <span class="bold-font label-style">Label*</span>
+      <span class="bold-font label-style pb-1">Label*</span>
       <mat-form-field appearance="fill">
         <input matInput [matDatepicker]="fillDatePicker" placeholder="MM/DD/YYYY" (click)="fillDatePicker.open()">
         <mat-datepicker-toggle matIconSuffix [for]="fillDatePicker">
@@ -91,7 +91,7 @@
     <mat-card class="p-4 h-100">
       <p class="bold-font f-16 m-0">Input</p>
       <hr>
-      <span class="bold-font label-style">Label*</span>
+      <span class="bold-font label-style pb-1">Label*</span>
       <mat-form-field appearance="outline">
         <input matInput placeholder="Type here">
       </mat-form-field>
@@ -102,7 +102,7 @@
     <mat-card class="p-4 h-100">
       <p class="bold-font f-16 m-0">Input</p>
       <hr>
-      <span class="bold-font label-style">Label*</span>
+      <span class="bold-font label-style pb-1">Label*</span>
       <mat-form-field appearance="fill">
         <input matInput placeholder="Type here">
       </mat-form-field>

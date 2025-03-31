@@ -9,5 +9,5 @@ import { MaterialModule } from '../../shared/material.module';
   styleUrl: './tabs.component.scss'
 })
 export class TabsComponent {
-
+  stepCount = 1;
 }

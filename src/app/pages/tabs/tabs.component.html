@@ -3,6 +3,10 @@
 </mat-card>
 
 <mat-card class="p-4 mt-4">
+   <div class="steps-container bold-font d-flex align-items-center gap-1 mb-2">
+      <p class="m-0  opacity-75">Step:</p>
+       <p class="m-0"><span class="primary">2</span>/6</p>
+   </div>
   <mat-tab-group mat-stretch-tabs="false">
 
     <!-- First Tab -->
@@ -53,7 +57,10 @@
      <!-- Fifth Tab -->
      <mat-tab>
       <ng-template mat-tab-label>
-        <img src="/Components/tab/count.svg" alt="count" width="20px">
+        <div class="step-badge-container d-flex justify-content-center align-items-center">
+          <p class="m-0 f-10 bold-font text-white">{{ stepCount }}</p>
+        </div>
+        
         <p class="m-0">Fifth Details</p>
       </ng-template>
       <div class="contnet-container mt-5">
